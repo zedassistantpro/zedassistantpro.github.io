@@ -7,5 +7,6 @@
 User-agent: *
 Allow: /
 Disallow: /uninstall.html
+Disallow: /README.md
 
 Sitemap: https://zedassistantpro.github.io/sitemap.xml
