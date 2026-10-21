@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sorry to see you go — ZED Bronze Assistant</title>
+<meta name="robots" content="noindex, follow">
+<meta name="description" content="Shown by Chrome after uninstalling ZED Bronze Assistant. Tell us which reason it was.">
+<link rel="canonical" href="https://zedassistantpro.github.io/uninstall.html">
+<!--
+  Chrome opens this page when someone uninstalls, via
+  chrome.runtime.setUninstallURL(). It is the last thing they will ever see of
+  the product, and it is the only moment you find out why.
+
+  It carries no account and no tracking: the only things in the URL are the
+  version and which build it was. Never the assessor ID, never a ZED id.
+
+  Most free uninstalls will be people who opened requirement 1.1, met the
+  locked card, and assumed the whole thing was a tease. So the first question
+  is the one that tells them otherwise.
+-->
+<style>
+  :root { color-scheme: light dark;
+          --bg: #f6f8fa; --card: #fff; --fg: #1d2733; --mut: #667a8c;
+          --line: #d9e2ea; --brand: #1c4e80; --pro: #6b3fa0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #10171e; --card: #161e26; --fg: #e6edf3; --mut: #93a4b4;
+            --line: #26323d; --brand: #6ea8dc; --pro: #b795e8; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); padding: 3em 1.2em 5em;
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 40em; margin: 0 auto; }
+  h1 { font-size: 1.5em; margin: 0 0 .3em; }
+  .sub { color: var(--mut); margin: 0 0 2em; }
+  details { background: var(--card); border: 1px solid var(--line);
+            border-radius: 8px; padding: .9em 1.1em; margin-bottom: .7em; }
+  details[open] { border-color: var(--brand); }
+  summary { cursor: pointer; font-weight: 600; }
+  details p { color: var(--mut); margin: .8em 0 0; }
+  a.btn { display: inline-block; margin-top: .9em; padding: .55em 1.1em;
+          background: var(--brand); color: #fff; text-decoration: none;
+          border-radius: 6px; font-size: .9em; font-weight: 600; }
+  a.btn.pro { background: var(--pro); }
+  footer { margin-top: 2.5em; color: var(--mut); font-size: .85em; }
+  code { background: var(--bg); padding: .1em .35em; border-radius: 3px; font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Sorry to see you go</h1>
+  <p class="sub">If you have a minute, which of these was it? Nothing here is
+     recorded — picking one just shows you what we would have said.</p>
+
+  <details>
+    <summary>The requirement I needed wasn't covered</summary>
+    <p>That is the most common reason, and it is worth knowing why. The free
+       assistant deliberately covers two sections in full — <b>Site Exterior
+       Photos</b> and <b>Product Photographs &amp; Description</b> — rather than
+       all seventeen badly.</p>
+    <p>The other fifteen requirements, the final submission wording, the
+       location checks and auto-fill are in <b>Pro</b>, which is a separate
+       extension. If you met the locked card at requirement 1.1 and assumed the
+       whole thing was a tease, that is our fault for not saying so sooner.</p>
+    <a class="btn pro" href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform?usp=pp_url&entry.883516785=Licence%20request" target="_blank" rel="noopener">Ask about Pro</a>
+  </details>
+
+  <details>
+    <summary>It didn't work on the portal</summary>
+    <p>This is the one we most want to hear about. The assistant works
+       alongside the ZED portal, so when the portal is updated parts of it can
+       stop working until a matching update is released - and Chrome reviews
+       every update, so that takes a few days. We do not always find out
+       straight away. If the extension is still
+       installed somewhere, the <b>History</b> tab has a short diagnostics log
+       and a <b>Copy for support</b> button — it contains no remark text, no
+       unit details and no assessment id.</p>
+    <p>Send that, with a line about what you were doing, and we will tell you
+       whether it is fixed.</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform?usp=pp_url&entry.883516785=Something%20is%20not%20working" target="_blank" rel="noopener">Tell us what happened</a>
+  </details>
+
+  <details>
+    <summary>It wrote the wrong thing, or wrote it badly</summary>
+    <p>The wording is meant to be edited — it is a draft of the typing, not a
+       verdict. But if a remark read wrongly for a real case, that is a wording
+       bug and worth fixing for everyone. Tell us the requirement and what it
+       should have said.</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform?usp=pp_url&entry.883516785=Suggestion" target="_blank" rel="noopener">Send the wording</a>
+  </details>
+
+  <details>
+    <summary>I'm not doing ZED assessments at the moment</summary>
+    <p>Fair enough. Nothing was stored anywhere but your own browser, and
+       uninstalling has already removed it. Nothing to cancel and nothing to
+       delete.</p>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform?usp=pp_url&entry.883516785=Uninstalling" target="_blank" rel="noopener">Tell us anyway</a>
+  </details>
+
+  <footer>
+    <p>Changed your mind? You can reinstall from the Chrome Web Store at any
+       time — your Chrome profile keeps nothing, so it starts fresh.</p>
+    <p>Everything the assistant held lived in this browser. Uninstalling
+       removed it. <a href="/">What this was</a> · <a href="disclaimer.html">What it does and does not do</a> · <a href="privacy.html">Privacy policy</a> ·
+       <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform">the support form</a> · <a href="mailto:zedassistantpro@gmail.com">zedassistantpro@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# ZED Bronze Assistant — https://zedassistantpro.github.io/
+#
+# Everything here is public documentation: what the extension does, what it
+# does not do, and how it handles data. All of it is meant to be found and
+# quoted, by search engines and by assistants alike.
+
+User-agent: *
+Allow: /
+Disallow: /uninstall.html
+
+Sitemap: https://zedassistantpro.github.io/sitemap.xml

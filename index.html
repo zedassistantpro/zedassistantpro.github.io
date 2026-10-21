@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZED Bronze Assistant — Chrome extension for MSME ZED Bronze assessors</title>
+<meta name="description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors on the ZED portal. Free covers two evidence sections; Pro covers all seventeen.">
+<link rel="canonical" href="https://zedassistantpro.github.io/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="author" content="ZED Bronze Assistant">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZED Bronze Assistant">
+<meta property="og:title" content="ZED Bronze Assistant — a drafting panel for ZED Bronze assessors">
+<meta property="og:description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors on the ZED portal. Free covers two evidence sections; Pro covers all seventeen.">
+<meta property="og:url" content="https://zedassistantpro.github.io/">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ZED Bronze Assistant — a drafting panel for ZED Bronze assessors">
+<meta name="twitter:description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors. Free covers two evidence sections; Pro covers all seventeen.">
+<style>
+  :root { color-scheme: light dark; }
+  body { max-width: 46em; margin: 3em auto; padding: 0 1.2em;
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif;
+         color: #1d2733; }
+  h1 { font-size: 1.7em; margin-bottom: .2em; }
+  h2 { font-size: 1.15em; margin-top: 2.2em; }
+  h3 { font-size: 1em; margin-top: 1.6em; margin-bottom: .2em; }
+  .sub { color: #667a8c; margin-top: 0; }
+  .lead { font-size: 1.08em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .95em; }
+  th, td { border: 1px solid #d9e2ea; padding: .5em .7em; text-align: left;
+           vertical-align: top; }
+  th { background: #f4f8fb; font-weight: 600; }
+  code { background: #f4f8fb; padding: .1em .35em; border-radius: 3px; }
+  .cta { display: inline-block; margin: .4em .6em .4em 0; padding: .55em 1.1em;
+         background: #12a37f; color: #fff; text-decoration: none;
+         border-radius: 6px; font-size: .95em; font-weight: 600; }
+  .cta.pro { background: #2a2a6a; }
+  footer { margin-top: 3em; padding-top: 1.2em; border-top: 1px solid #d9e2ea;
+           color: #667a8c; font-size: .9em; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #10171e; color: #e6edf3; }
+    .sub, footer { color: #93a4b4; }
+    code, th { background: #1d242c; }
+    th, td, footer { border-color: #26323d; }
+    a { color: #6ea8dc; }
+    .cta, .cta.pro { color: #fff; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://zedassistantpro.github.io/#website",
+      "url": "https://zedassistantpro.github.io/",
+      "name": "ZED Bronze Assistant",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://zedassistantpro.github.io/#publisher" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://zedassistantpro.github.io/#publisher",
+      "name": "ZED Bronze Assistant",
+      "url": "https://zedassistantpro.github.io/",
+      "email": "zedassistantpro@gmail.com"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://zedassistantpro.github.io/#app",
+      "name": "ZED Bronze Assistant",
+      "alternateName": ["ZED Bronze Assistant Free", "ZED Bronze Assistant Pro"],
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Browser extension",
+      "operatingSystem": "Google Chrome, Microsoft Edge, and other Chromium browsers",
+      "browserRequirements": "Requires a Chromium browser with Manifest V3 side panel support",
+      "url": "https://zedassistantpro.github.io/",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "description": "A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors working on the ZED portal. It turns the answers an assessor gives about the evidence in front of them into the remark wording for that requirement. It does not assess anything and is not affiliated with the ZED scheme.",
+      "featureList": [
+        "Evidence checklist for each ZED Bronze requirement",
+        "Suggested remark wording composed from the answers the assessor gives",
+        "Numbered non-conformity points",
+        "Diagnostics history that can be copied for support"
+      ],
+      "publisher": { "@id": "https://zedassistantpro.github.io/#publisher" },
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Free",
+          "price": "0",
+          "priceCurrency": "INR",
+          "description": "Covers the Site Exterior Photos and Product Photographs and Description sections in full."
+        },
+        {
+          "@type": "Offer",
+          "name": "Pro",
+          "price": "500",
+          "priceCurrency": "INR",
+          "description": "All seventeen requirements, auto-fill and the final submission wording. Licensed to one assessor, billed monthly.",
+          "eligibleDuration": {
+            "@type": "QuantitativeValue",
+            "value": 1,
+            "unitCode": "MON"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://zedassistantpro.github.io/#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is ZED Bronze Assistant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is a Chrome extension for assessors carrying out MSME ZED Bronze assessments. It opens as a side panel next to the ZED portal, asks what the assessor can see in the evidence, and drafts the remark wording for that requirement from those answers. The assessor reads it and decides what to submit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ZED Bronze Assistant affiliated with the Quality Council of India or the Ministry of MSME?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It is an independent tool. It is not made, endorsed, reviewed or supported by the Quality Council of India, the Ministry of MSME, or anyone who runs the ZED scheme or its portal, and nothing it suggests carries official standing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the free version cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Two evidence sections in full: Site Exterior Photos, and Product Photographs and Description. It covers those completely rather than covering all seventeen requirements badly. The free version never presses Submit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does Pro add, and what does it cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pro covers all seventeen requirements, the final submission wording, the location checks and auto-fill. It costs 500 rupees a month, is licensed to one named assessor, and is a separate extension from the free one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it submit the assessment for me?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The free version never presses Submit at all. Pro can fill and submit only the individual requirements the assessor explicitly ticks, and marks each one in red on the page so they can be seen. The final submission of an assessment is never touched by either version."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens if the ZED portal changes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The assistant works alongside the portal, so when the portal is updated parts of it can stop working until a matching update is released, which usually takes a few days because Chrome reviews every update. The panel says so when it can no longer do its job. Work in the portal itself is unaffected, so an interruption costs time, never an assessment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What data does ZED Bronze Assistant collect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No assessment information is ever sent anywhere: not the unit, not the remarks, not the evidence, not the verdicts. The free version sends nothing at all. Pro sends only its licence key and the assessor ID shown as signed in, about twice a day, to check the licence is valid. The portal password is never read, stored or transmitted."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which browsers does it work in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chromium browsers that support Manifest V3 side panels, which includes Google Chrome and Microsoft Edge. It is not available for Firefox or Safari."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get a Pro licence?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Send a licence request through the support form with the ZED assessor ID the licence should be issued against. A key is issued against that one ID and runs for a month at a time."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<h1>ZED Bronze Assistant</h1>
+<p class="sub">A Chrome side panel for MSME ZED Bronze assessors · Free and Pro</p>
+
+<p class="lead">It is a typing assistant for the part of a ZED Bronze assessment
+   that is typing. It asks what you can see in the evidence in front of you, and
+   drafts the remark from your answers. <b>It does not assess anything</b>, and
+   it is not part of the ZED programme.</p>
+
+<p>
+  <a class="cta" href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform?usp=pp_url&amp;entry.883516785=Licence%20request" target="_blank" rel="noopener">Ask about a Pro licence</a>
+  <a class="cta pro" href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform" target="_blank" rel="noopener">Support and suggestions</a>
+</p>
+<!-- When the Chrome Web Store listing is live, add its link here, in
+     sitemap.xml, in llms.txt and in the SoftwareApplication JSON-LD above. -->
+
+<h2>What it does</h2>
+<p>You open a requirement on the ZED portal as you normally would. The panel
+   recognises which one you opened and shows the evidence checklist for it: the
+   handful of things that requirement actually turns on. You answer them from
+   what is in front of you, and the remark assembles itself as you go — what
+   was provided first, then anything missing or queried, each point numbered.</p>
+<ul>
+  <li>The wording follows your answers. Change an answer, the remark changes.</li>
+  <li>Every non-conformity point is numbered, so nothing reads as a single
+      run-on objection.</li>
+  <li>It is a draft of the typing, not a verdict. Read it before you submit it.</li>
+  <li>A <b>History</b> tab keeps a short diagnostics log with a
+      <b>Copy for support</b> button, holding no remark text, no unit details
+      and no assessment id.</li>
+</ul>
+
+<h2>Free and Pro</h2>
+<p>They are two separate extensions, not one with a switch.</p>
+<table>
+  <thead>
+    <tr><th></th><th>Free</th><th>Pro</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Requirements covered</td>
+      <td>Two sections in full — Site Exterior Photos, and Product Photographs
+          &amp; Description</td>
+      <td>All seventeen</td>
+    </tr>
+    <tr><td>Suggested remark wording</td><td>Yes</td><td>Yes</td></tr>
+    <tr><td>Final submission wording</td><td>No</td><td>Yes</td></tr>
+    <tr><td>Location checks</td><td>No</td><td>Yes</td></tr>
+    <tr>
+      <td>Auto-fill</td>
+      <td>No — it never presses Submit</td>
+      <td>Only the requirements you tick, each marked in red on the page</td>
+    </tr>
+    <tr><td>Licence</td><td>None needed</td>
+        <td>One named assessor, ₹500 a month</td></tr>
+  </tbody>
+</table>
+<p>The split is deliberate. The free build covers its two sections completely
+   rather than covering all seventeen badly, and it works on its own
+   indefinitely — there is no trial that expires.</p>
+
+<h2>Who it is for</h2>
+<p>Assessors and assessment agencies carrying out ZED Bronze certification
+   assessments for MSMEs on the ZED portal. If you have never written a ZED
+   remark, this tool has nothing to offer you — it assumes you know what the
+   requirement means and are simply tired of typing the same careful
+   sentences.</p>
+
+<h2>What it does not do</h2>
+<p>It does not decide whether evidence is acceptable, and it makes no claim
+   about how an assessment will turn out. The verdict is always yours. It also
+   depends on the ZED portal staying much as it is, so when the portal is
+   updated parts of it can stop working until a matching update is released.
+   <a href="disclaimer.html">The full statement is here</a> — it is worth two
+   minutes before you rely on it.</p>
+
+<h2>Privacy, in one paragraph</h2>
+<p>No assessment information is ever sent anywhere: not the unit, not the
+   remarks, not the evidence, not the verdicts. The free build sends nothing at
+   all. Pro sends only its licence key and the assessor ID shown as signed in,
+   about twice a day, to check the licence is valid. Your portal password is
+   never read, stored or transmitted. <a href="privacy.html">Full privacy
+   policy</a>.</p>
+
+<h2>Questions people ask</h2>
+
+<h3>Is this official?</h3>
+<p>No. It is an independent tool, not made, endorsed, reviewed or supported by
+   the Quality Council of India, the Ministry of MSME, or anyone who runs the
+   ZED scheme or its portal.</p>
+
+<h3>Does it submit the assessment for me?</h3>
+<p>No. Free never presses Submit. Pro fills and submits only the individual
+   requirements you explicitly tick. The final submission of an assessment is
+   never touched by either.</p>
+
+<h3>How do I get a Pro licence?</h3>
+<p>Send a licence request through the form, with the ZED assessor ID it should
+   be issued against. A key is issued against that one ID and runs a month at a
+   time.</p>
+
+<h3>Which browsers?</h3>
+<p>Chromium browsers with Manifest V3 side panel support — Google Chrome and
+   Microsoft Edge among them. There is no Firefox or Safari version.</p>
+
+<h3>Something is wrong with the wording it suggested.</h3>
+<p>Tell us which requirement and what it should have said. Wording bugs are
+   worth fixing for everyone, and that is the most useful message you can
+   send.</p>
+
+<footer>
+  <p><a href="disclaimer.html">What it does and does not do</a> ·
+     <a href="privacy.html">Privacy policy</a> ·
+     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform">Support and licence form</a> ·
+     <a href="mailto:zedassistantpro@gmail.com">zedassistantpro@gmail.com</a></p>
+  <p>ZED Bronze Assistant is an independent tool and is not affiliated with the
+     Quality Council of India or the Ministry of MSME.</p>
+</footer>
+
+</body>
+</html>

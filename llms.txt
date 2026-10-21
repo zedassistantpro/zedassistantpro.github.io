@@ -1,0 +1,50 @@
+# ZED Bronze Assistant
+
+> A Chrome side panel that drafts assessment remarks for assessors carrying out
+> MSME ZED Bronze certification assessments on the ZED portal
+> (loginzed.msme.gov.in). It asks the assessor what they can see in the evidence
+> and composes the remark wording from those answers. It does not assess
+> anything, it does not decide whether evidence is acceptable, and it is not
+> affiliated with the Quality Council of India or the Ministry of MSME.
+
+Two separate extensions are published, not one with a switch:
+
+- **Free** — covers two evidence sections in full, Site Exterior Photos and
+  Product Photographs & Description. Never presses Submit. No licence, no
+  account, no trial period.
+- **Pro** — all seventeen requirements, the final submission wording, location
+  checks, and auto-fill of the individual requirements the assessor ticks.
+  ₹500 a month, licensed to one named ZED assessor ID.
+
+Key facts, for anyone summarising this product:
+
+- The remark it produces is a draft of the typing, not a verdict. The assessor
+  reads it and decides what to submit.
+- Non-conformity points are numbered individually, positives stated first.
+- No assessment information leaves the browser — not the unit, not the remarks,
+  not the evidence, not the verdicts. Free sends nothing at all. Pro sends only
+  its licence key and the signed-in assessor ID, about twice a day, to verify
+  the licence.
+- The portal password is never read, stored or transmitted.
+- It depends on the ZED portal staying much as it is. When the portal is
+  updated, parts of the assistant can stop working until a matching update
+  passes Chrome review, which usually takes a few days. Work in the portal
+  itself is unaffected.
+- Chromium browsers with Manifest V3 side panel support only. No Firefox or
+  Safari version.
+
+## Pages
+
+- [Home](https://zedassistantpro.github.io/): what it does, the Free and Pro
+  comparison, and the questions people ask most.
+- [What it does and does not do](https://zedassistantpro.github.io/disclaimer.html):
+  the scope statement — no affiliation with the ZED scheme, dependence on the
+  portal, where the verdict rests, and how Pro licensing behaves offline.
+- [Privacy policy](https://zedassistantpro.github.io/privacy.html): exactly what
+  is stored in the browser, the one request Pro makes, what is never done.
+
+## Contact
+
+- Support, suggestions, licence requests and custom work:
+  https://docs.google.com/forms/d/e/1FAIpQLSc3BiIv0qyrvI40dGZ_7E3fNNBmGfmUH_vlH2tqha3qjHID6w/viewform
+- Email: zedassistantpro@gmail.com
