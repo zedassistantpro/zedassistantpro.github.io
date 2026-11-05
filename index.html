@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>ZED Bronze Assistant — Chrome extension for MSME ZED Bronze assessors</title>
-<meta name="description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors on the ZED portal. Free covers two evidence sections; Pro covers all seventeen.">
+<meta name="description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors on the ZED portal. Two sections free for good; 14 days free on everything else.">
 <link rel="canonical" href="https://zedassistantpro.github.io/">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <meta name="author" content="ZED Bronze Assistant">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ZED Bronze Assistant">
 <meta property="og:title" content="ZED Bronze Assistant — a drafting panel for ZED Bronze assessors">
-<meta property="og:description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors on the ZED portal. Free covers two evidence sections; Pro covers all seventeen.">
+<meta property="og:description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors on the ZED portal. Two sections free for good; 14 days free on everything else.">
 <meta property="og:url" content="https://zedassistantpro.github.io/">
 <meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ZED Bronze Assistant — a drafting panel for ZED Bronze assessors">
-<meta name="twitter:description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors. Free covers two evidence sections; Pro covers all seventeen.">
+<meta name="twitter:description" content="A Chrome side panel that drafts assessment remarks for MSME ZED Bronze assessors on the ZED portal. Two sections free for good; 14 days free on everything else.">
 <style>
   :root { color-scheme: light dark; }
   body { max-width: 46em; margin: 3em auto; padding: 0 1.2em;
@@ -57,7 +57,9 @@
       "url": "https://zedassistantpro.github.io/",
       "name": "ZED Bronze Assistant",
       "inLanguage": "en",
-      "publisher": { "@id": "https://zedassistantpro.github.io/#publisher" }
+      "publisher": {
+        "@id": "https://zedassistantpro.github.io/#publisher"
+      }
     },
     {
       "@type": "Organization",
@@ -70,7 +72,6 @@
       "@type": "SoftwareApplication",
       "@id": "https://zedassistantpro.github.io/#app",
       "name": "ZED Bronze Assistant",
-      "alternateName": ["ZED Bronze Assistant Free", "ZED Bronze Assistant Pro"],
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Browser extension",
       "operatingSystem": "Google Chrome, Microsoft Edge, and other Chromium browsers",
@@ -85,21 +86,30 @@
         "Numbered non-conformity points",
         "Diagnostics history that can be copied for support"
       ],
-      "publisher": { "@id": "https://zedassistantpro.github.io/#publisher" },
+      "publisher": {
+        "@id": "https://zedassistantpro.github.io/#publisher"
+      },
       "offers": [
         {
           "@type": "Offer",
           "name": "Free",
           "price": "0",
           "priceCurrency": "INR",
-          "description": "Covers the Site Exterior Photos and Product Photographs and Description sections in full."
+          "description": "Site Exterior Photos and Product Photographs and Description, in full, with no licence and no expiry."
+        },
+        {
+          "@type": "Offer",
+          "name": "14-day trial",
+          "price": "0",
+          "priceCurrency": "INR",
+          "description": "Everything unlocked for 14 days. One per ZED assessor ID, no card required."
         },
         {
           "@type": "Offer",
           "name": "Pro",
           "price": "500",
           "priceCurrency": "INR",
-          "description": "All seventeen requirements, auto-fill and the final submission wording. Licensed to one assessor, billed monthly.",
+          "description": "All fifteen requirements, auto-fill and the final submission wording. One named assessor, billed monthly.",
           "eligibleDuration": {
             "@type": "QuantitativeValue",
             "value": 1,
@@ -131,18 +141,18 @@
         },
         {
           "@type": "Question",
-          "name": "What does the free version cover?",
+          "name": "What stays free for good?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Two evidence sections in full: Site Exterior Photos, and Product Photographs and Description. It covers those completely rather than covering all seventeen requirements badly. The free version never presses Submit."
+            "text": "Two evidence sections in full: Site Exterior Photos, and Product Photographs and Description. Those never expire and never need a licence. It covers them completely rather than covering every requirement badly, and it never presses Submit."
           }
         },
         {
           "@type": "Question",
-          "name": "What does Pro add, and what does it cost?",
+          "name": "What does the trial include, and what does it cost afterwards?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Pro covers all seventeen requirements, the final submission wording, the location checks and auto-fill. It costs 500 rupees a month, is licensed to one named assessor, and is a separate extension from the free one."
+            "text": "The 14-day trial unlocks everything: all fifteen requirements numbered 1.1 to 7.1, the final submission wording, the location checks and auto-fill. It takes one press, needs no card, and is issued against the ZED assessor ID the portal shows you are signed in as, one per assessor. Afterwards it is 500 rupees a month for one named assessor, and the two free sections keep working either way."
           }
         },
         {
@@ -166,7 +176,7 @@
           "name": "What data does ZED Bronze Assistant collect?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No assessment information is ever sent anywhere: not the unit, not the remarks, not the evidence, not the verdicts. The free version sends nothing at all. Pro sends only its licence key and the assessor ID shown as signed in, about twice a day, to check the licence is valid. The portal password is never read, stored or transmitted."
+            "text": "No assessment information is ever sent anywhere: not the unit, not the remarks, not the evidence, not the verdicts. Until you start a trial or enter a licence key, nothing leaves your browser at all. After that it sends its licence key and the signed-in assessor ID about twice a day to check the licence is valid, plus the email and name you give when starting a trial. The portal password is never read, stored or transmitted."
           }
         },
         {
@@ -179,10 +189,10 @@
         },
         {
           "@type": "Question",
-          "name": "How do I get a Pro licence?",
+          "name": "How do I start the trial, or get a licence?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Send a licence request through the support form with the ZED assessor ID the licence should be issued against. A key is issued against that one ID and runs for a month at a time."
+            "text": "The trial is one press in the panel's Licence tab, with the ZED portal signed in. For a licence afterwards, send a request through the support form. Your key does not change when a trial becomes a licence - it simply keeps working."
           }
         }
       ]
@@ -194,7 +204,7 @@
 <body>
 
 <h1>ZED Bronze Assistant</h1>
-<p class="sub">A Chrome side panel for MSME ZED Bronze assessors · Free and Pro</p>
+<p class="sub">A Chrome side panel for MSME ZED Bronze assessors</p>
 
 <p class="lead">It is a typing assistant for the part of a ZED Bronze assessment
    that is typing. It asks what you can see in the evidence in front of you, and
@@ -224,18 +234,20 @@
       and no assessment id.</li>
 </ul>
 
-<h2>Free and Pro</h2>
-<p>They are two separate extensions, not one with a switch.</p>
+<h2>What you get, and what it costs</h2>
+<p>One extension. Install it and two evidence sections work immediately and for
+   good. Everything else is free for fourteen days, then goes quiet unless you
+   want to keep it.</p>
 <table>
   <thead>
-    <tr><th></th><th>Free</th><th>Pro</th></tr>
+    <tr><th></th><th>Free, always</th><th>Trial &amp; Pro</th></tr>
   </thead>
   <tbody>
     <tr>
       <td>Requirements covered</td>
       <td>Two sections in full — Site Exterior Photos, and Product Photographs
           &amp; Description</td>
-      <td>All seventeen</td>
+      <td>Both, plus all fifteen requirements, 1.1 to 7.1</td>
     </tr>
     <tr><td>Suggested remark wording</td><td>Yes</td><td>Yes</td></tr>
     <tr><td>Final submission wording</td><td>No</td><td>Yes</td></tr>
@@ -245,13 +257,16 @@
       <td>No — it never presses Submit</td>
       <td>Only the requirements you tick, each marked in red on the page</td>
     </tr>
-    <tr><td>Licence</td><td>None needed</td>
-        <td>One named assessor, ₹500 a month</td></tr>
+    <tr><td>Cost</td><td>Nothing, for good</td>
+        <td>14 days free, then ₹500 a month for one assessor</td></tr>
   </tbody>
 </table>
-<p>The split is deliberate. The free build covers its two sections completely
-   rather than covering all seventeen badly, and it works on its own
-   indefinitely — there is no trial that expires.</p>
+<p>The free two sections are not a teaser that expires. When the fortnight
+   ends, the assistant keeps doing those two completely — the rest simply stops
+   offering itself. Nothing you have written is deleted, and nothing is charged
+   at any point without you asking.</p>
+<p>The trial takes one press. It is issued against the ZED assessor ID the
+   portal shows you are signed in as, one per assessor, and needs no card.</p>
 
 <h2>Who it is for</h2>
 <p>Assessors and assessment agencies carrying out ZED Bronze certification
@@ -270,11 +285,12 @@
 
 <h2>Privacy, in one paragraph</h2>
 <p>No assessment information is ever sent anywhere: not the unit, not the
-   remarks, not the evidence, not the verdicts. The free build sends nothing at
-   all. Pro sends only its licence key and the assessor ID shown as signed in,
-   about twice a day, to check the licence is valid. Your portal password is
-   never read, stored or transmitted. <a href="privacy.html">Full privacy
-   policy</a>.</p>
+   remarks, not the evidence, not the verdicts. Until you start a trial or
+   enter a key, nothing leaves your browser at all. After that the assistant
+   sends its licence key and the assessor ID shown as signed in, about twice a
+   day, to check the licence is still valid — and the email and name you give
+   when starting a trial. Your portal password is never read, stored or
+   transmitted. <a href="privacy.html">Full privacy policy</a>.</p>
 
 <h2>Questions people ask</h2>
 
@@ -288,10 +304,15 @@
    requirements you explicitly tick. The final submission of an assessment is
    never touched by either.</p>
 
-<h3>How do I get a Pro licence?</h3>
-<p>Send a licence request through the form, with the ZED assessor ID it should
-   be issued against. A key is issued against that one ID and runs a month at a
-   time.</p>
+<h3>How do I start the trial?</h3>
+<p>One press, in the panel's Licence tab, with the ZED portal signed in. No
+   card, nothing to cancel. It is issued against the assessor ID the portal
+   shows you are signed in as, one per assessor.</p>
+
+<h3>And a licence afterwards?</h3>
+<p>Send a request through the form. Your key does not change when a trial
+   becomes a licence — there is nothing to paste and nothing to reinstall, it
+   simply keeps working.</p>
 
 <h3>Which browsers?</h3>
 <p>Chromium browsers with Manifest V3 side panel support — Google Chrome and

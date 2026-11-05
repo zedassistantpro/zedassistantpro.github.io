@@ -1,0 +1,26 @@
+{
+  "configVersion": 1,
+  "selectors": {
+    "requirementRow": "tr[ng-repeat^=\"r in details.requirements\"]",
+    "sectionRow": "[ng-repeat=\"s in details.sections\"]",
+    "activePane": ".tab-pane.active",
+    "hidden": ".ng-hide",
+    "editButton": "input[value=\"Edit\"]",
+    "evidenceLink": "a[ng-click=\"UpdateTimestamp(e)\"]",
+    "evidenceValidate": "input[ng-click=\"Validate(e)\"]",
+    "evidenceOpened": "img[ng-show=\"e.DocumentOpenedTime\"]",
+    "loading": ".loadingdiv",
+    "modalShown": ".modal.show",
+    "modalBackdrop": ".modal-backdrop",
+    "modalDismiss": "[data-bs-dismiss=\"modal\"], [data-dismiss=\"modal\"]",
+    "alert": "[class*=\"sweet\"], [class*=\"swal\"]",
+    "alertOverlay": "[class*=\"swal-overlay\"]",
+    "alertConfirm": "button.confirm"
+  },
+  "modals": {
+    "remarks": "AssessorRemarks",
+    "finalSubmit": "ConfirmFinalSubmit"
+  },
+  "fillEnabled": true,
+  "announcement": null
+}

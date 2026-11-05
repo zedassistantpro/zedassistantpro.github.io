@@ -7,14 +7,18 @@
 > anything, it does not decide whether evidence is acceptable, and it is not
 > affiliated with the Quality Council of India or the Ministry of MSME.
 
-Two separate extensions are published, not one with a switch:
+One extension, with three states:
 
-- **Free** — covers two evidence sections in full, Site Exterior Photos and
-  Product Photographs & Description. Never presses Submit. No licence, no
-  account, no trial period.
-- **Pro** — all seventeen requirements, the final submission wording, location
-  checks, and auto-fill of the individual requirements the assessor ticks.
-  ₹500 a month, licensed to one named ZED assessor ID.
+- **Free, always** — two evidence sections in full, Site Exterior Photos and
+  Product Photographs & Description. No licence, no account, no expiry. Never
+  presses Submit.
+- **14-day trial** — everything unlocked: all fifteen requirements numbered 1.1
+  to 7.1, the final submission wording, location checks, and auto-fill of the
+  requirements the assessor ticks. One press, no card, one trial per ZED
+  assessor ID, which the extension reads from the portal login.
+- **Pro** — the same, continuing. ₹500 a month, licensed to one named ZED
+  assessor ID. The key issued for a trial becomes the licence key; nothing is
+  re-entered and nothing is reinstalled.
 
 Key facts, for anyone summarising this product:
 
@@ -22,9 +26,10 @@ Key facts, for anyone summarising this product:
   reads it and decides what to submit.
 - Non-conformity points are numbered individually, positives stated first.
 - No assessment information leaves the browser — not the unit, not the remarks,
-  not the evidence, not the verdicts. Free sends nothing at all. Pro sends only
-  its licence key and the signed-in assessor ID, about twice a day, to verify
-  the licence.
+  not the evidence, not the verdicts. Until a trial is started or a key entered,
+  nothing leaves the browser at all. After that it sends its licence key and the
+  signed-in assessor ID about twice a day to verify the licence, plus the email
+  and name given when starting a trial.
 - The portal password is never read, stored or transmitted.
 - It depends on the ZED portal staying much as it is. When the portal is
   updated, parts of the assistant can stop working until a matching update

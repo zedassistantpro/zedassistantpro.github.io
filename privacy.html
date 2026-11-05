@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy — ZED Bronze Assistant</title>
-<meta name="description" content="What ZED Bronze Assistant stores and sends. No assessment information leaves your browser. The free build sends nothing; Pro sends only its licence key and assessor ID.">
+<meta name="description" content="What ZED Bronze Assistant stores and sends. No assessment information leaves your browser. The assistant sends only its licence key, the signed-in assessor ID, and what you type to start a trial.">
 <link rel="canonical" href="https://zedassistantpro.github.io/privacy.html">
 <meta name="robots" content="index, follow, max-snippet:-1">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="ZED Bronze Assistant">
 <meta property="og:title" content="Privacy policy — ZED Bronze Assistant">
-<meta property="og:description" content="No assessment information leaves your browser. The free build sends nothing at all; Pro sends only its licence key and assessor ID, to check the licence.">
+<meta property="og:description" content="No assessment information leaves your browser. The assistant sends only its licence key, the signed-in assessor ID, and what you type to start a trial.">
 <meta property="og:url" content="https://zedassistantpro.github.io/privacy.html">
 <style>
   :root { color-scheme: light dark; }
@@ -40,7 +40,7 @@
   "url": "https://zedassistantpro.github.io/privacy.html",
   "inLanguage": "en",
   "dateModified": "2026-10-21",
-  "description": "What ZED Bronze Assistant stores and sends. No assessment information leaves your browser. The free build sends nothing at all; Pro sends only its licence key and the signed-in assessor ID, to check the licence is valid.",
+  "description": "What ZED Bronze Assistant stores and sends. No assessment information leaves your browser. The assistant sends only its licence key, the signed-in assessor ID, and what you type to start a trial.",
   "isPartOf": { "@id": "https://zedassistantpro.github.io/#website" },
   "about": { "@id": "https://zedassistantpro.github.io/#app" }
 }
@@ -48,32 +48,52 @@
 </head>
 <body>
 <h1>Privacy policy</h1>
-<p class="sub">ZED Bronze Assistant Free and Pro · last updated 21 October 2026</p>
+<p class="sub">ZED Bronze Assistant · last updated 5 November 2026</p>
 
 <p class="lead">The short version: your assessment work never leaves your
    machine, and the free build never sends anything at all.</p>
 
 <h2>What stays in your browser</h2>
-<p>The assistant runs inside your own browser. Your work does not leave your
-   machine. The remark is composed in
-   your browser from the answers you give. The extension keeps, in your own
-   browser only:</p>
+<p>The assistant runs inside your own browser. Your assessment work does not
+   leave your machine. The remark is composed in your browser from the answers
+   you give. The extension keeps, in your own browser only:</p>
 <ul>
   <li>which side of the window you want the panel on;</li>
-  <li>the requirements you ticked for auto-fill (Pro);</li>
+  <li>the requirements you ticked for auto-fill;</li>
   <li>a history of the remarks you filled, and values you asked it to
       remember, in the browser's local database;</li>
-  <li>your licence key (Pro).</li>
+  <li>your licence key, and the ZED assessor ID the portal shows as signed in
+      on that computer.</li>
 </ul>
 <p>None of that is transmitted to us, and we cannot read it.</p>
 
-<h2>What is sent, and only in Pro</h2>
-<p>Pro checks that its licence is valid, roughly twice a day. That request
-   contains the licence key and the ZED assessor ID the portal shows as signed
-   in on that computer, and goes to a licence service we operate. It returns
-   only whether the key is valid and when it expires.</p>
-<p>No assessment information is sent: not the unit, not the remarks, not the
-   evidence, not the verdicts.</p>
+<h2>What is sent, and when</h2>
+<p>Three things leave your browser, and nothing else.</p>
+
+<p><b>1. Checking the licence.</b> Once the assistant has been unlocked — by a
+   trial or by a licence key — it checks that the key is still valid, roughly
+   twice a day. That request carries the licence key and the ZED assessor ID
+   the portal shows as signed in on that computer. It comes back with whether
+   the key is valid and when it runs out. Until you start a trial or enter a
+   key, this never happens.</p>
+
+<p><b>2. Starting the 14-day trial.</b> When you press the button, we are sent
+   your ZED assessor ID, the email address you type, and the name the portal
+   displays for you. We use them to issue the trial, to make sure one assessor
+   gets one trial, and to write to you before it ends. Nothing is charged and
+   no payment details are asked for.</p>
+
+<p><b>3. Checking for a fix.</b> About every six hours the assistant fetches a
+   small configuration file from our website. It tells the assistant where
+   things are on the ZED portal, so that when the portal changes we can correct
+   it without waiting days for a new version to be reviewed. It is an ordinary
+   file download: nothing about you is sent with it, and the file contains no
+   program code.</p>
+
+<p><b>No assessment information is sent, ever</b>: not the unit, not the
+   remarks, not the evidence, not the verdicts, not your answers to the Yes/No
+   questions, and not the contents of any portal page.</p>
+
 <p>When you ask for a licence we hold the name, email, ZED assessor ID and
    phone number you send us, together with the licence dates. We use them to
    issue your licence, to check it, and to contact you about renewal. Nothing

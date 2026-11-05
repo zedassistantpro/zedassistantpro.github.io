@@ -10,27 +10,33 @@ Quality Council of India or the Ministry of MSME**.
 
 **[Read more at zedassistantpro.github.io](https://zedassistantpro.github.io/)**
 
-## Two builds
+## What you get
 
-| | Free | Pro |
+One extension. Two evidence sections work immediately and for good; everything
+else is free for fourteen days.
+
+| | Free, always | Trial & Pro |
 |---|---|---|
-| Requirements covered | Two sections in full — Site Exterior Photos, and Product Photographs & Description | All seventeen |
+| Requirements covered | Two sections in full — Site Exterior Photos, and Product Photographs & Description | Both, plus all fifteen requirements, 1.1 to 7.1 |
 | Suggested remark wording | Yes | Yes |
 | Final submission wording | No | Yes |
 | Location checks | No | Yes |
 | Auto-fill | No — it never presses Submit | Only the requirements you tick, each marked in red on the page |
-| Licence | None needed | One named assessor, ₹500 a month |
+| Cost | Nothing, for good | 14 days free, then ₹500 a month for one assessor |
 
-The free build is not a trial. It covers its two sections completely and goes
-on doing so.
+The free two sections are not a teaser. When the fortnight ends they keep
+working completely — the rest simply stops offering itself. The trial takes one
+press, needs no card, and is one per ZED assessor ID.
 
 ## Privacy, briefly
 
 No assessment information leaves your browser — not the unit, not the remarks,
-not the evidence, not the verdicts. The free build sends nothing at all. Pro
-sends only its licence key and the assessor ID shown as signed in, about twice
-a day, to check the licence is valid. The portal password is never read, stored
-or transmitted. [Full policy](https://zedassistantpro.github.io/privacy.html).
+not the evidence, not the verdicts. Until you start a trial or enter a key,
+nothing leaves your browser at all. After that it sends its licence key and the
+signed-in assessor ID about twice a day to check the licence is valid, plus the
+email and name you give when starting a trial. The portal password is never
+read, stored or transmitted.
+[Full policy](https://zedassistantpro.github.io/privacy.html).
 
 ## This repository
 
