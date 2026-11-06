@@ -34,7 +34,8 @@ No assessment information leaves your browser — not the unit, not the remarks,
 not the evidence, not the verdicts. Until you start a trial or enter a key,
 nothing leaves your browser at all. After that it sends its licence key and the
 signed-in assessor ID about twice a day to check the licence is valid, plus the
-email and name you give when starting a trial. The portal password is never
+email and name you give when starting a trial — and a mobile number only if
+you choose to fill in that box, which is optional. The portal password is never
 read, stored or transmitted.
 [Full policy](https://zedassistantpro.github.io/privacy.html).
 
